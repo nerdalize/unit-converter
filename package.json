@@ -1,0 +1,25 @@
+{
+  "name": "unit-converter",
+  "version": "1.0.0",
+  "main": "dist/unitConverter.cjs.js",
+  "module": "dist/unitConverter.esm.js",
+  "browser": "dist/unitConverter.umd.js",
+  "description": "Converting from and to human readable units",
+  "repository": "git@github.com:nerdalize/unit-converter.git",
+  "author": "Dexter <dexter@dexterlabs.nl>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.65.0",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
